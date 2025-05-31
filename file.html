@@ -1,0 +1,71 @@
+<html>
+    <head>
+   <title>Beyond Miles</title>  
+   <link rel ="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Beyond Miles</h1>
+    <div id="startScreen">
+      <p></p>
+      <h2>Log In</h2>
+      <div class="label-input-container">
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" placeholder="First Name">
+      </div>
+      <div class="label-input-container">
+     <label for="surName">Surname: </label>
+        <input type="text" id="surName" placeholder="Surname">
+        </div>
+        <div class="label-input-container"><label for="email">Email: </label>
+        <input type="text" id="email" placeholder="Email">
+        </div>
+        <p id="fieldError" style="color: red; display: none;"></p>
+        <p></p>
+      
+         <button id="enterButton" >Enter</button>
+    </div>
+    
+     <div id="quiz" style="display: none;">
+   <div id="questions">
+        <h2>Tourist Type Personality Quiz</h2>
+        In order to personalise your travel recommendations, we ask you to take part in our personality quiz to determine what type of tourist you are!</div>
+    <ul id="answers">
+    </ul>
+    <div style="clear: both"></div>
+    <button id="button" class="button">Start the quiz</button>
+  </div>
+
+  <div id="results">
+    <h2>Hi, <span id="firstNameDisplay"></span>! <img id="touristImage" src="" /></h2>
+    <p> Your tourist type is <span id="touristType"></span>!</p>
+    <div id="culturalDiv" style="display: none;">
+        <p>Mr. Miles loves exploring museums, art galleries, and historical landmarks. Always curious and eager to learn, Mr. Miles will help you immerse yourself in the rich history and traditions of every place you visit. Check out some of his recommendations by clicking on the map below!</p>
+    <p> <button class="cultural-image-button"onclick="openFigma()"></button></button></p>
+  </div>
+    <div id="adventureDiv" style="display: none;">
+        <p>Mr. Miles is always seeking excitement. As an adventure tourist, he is the perfect companion for experiencing thrilling activities and new adventures. Check out some of his recommendations by clicking on the map below!</p>
+    <p> <button class="adventure-image-button"onclick="openFigma()"></button></button></p>
+  </div>
+    <div id="entertainmentDiv" style="display: none;">
+        <p>Mr. Miles thrives in the nightlife and entertainment scene and is the ultimate party animal. As an entertainment tourist, he is the perfect companion to enjoy some music and try out some tasty food and drinks! Check out some of his recommendations by clicking on the map below!</p>
+    <p> <button class="entertainment-image-button"onclick="openFigma()"></button></button></p>
+  </div>
+    <div id="leisureDiv" style="display: none;">
+        <p>Mr. Miles loves leisurely escapes. As a leisure tourist, he is the perfect companion for calm, stress-free holidays. Check out some of his recommendations by clicking on the map below!</p>
+        <p> <button class="leisure-image-button" onclick="openFigma()"></button></p> 
+  </div>
+ 
+<p>Not happy with your result? </p>
+    <p><a href="file:///Users/sarahpericho/Documents/4th%20yr/fyp/fyp%20personality%20quiz/file.html">Take the quiz again!</a></p>
+
+  </div>
+  <div id="error">
+    <p>There was an error. Please try again!</p>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+  </html>

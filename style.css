@@ -1,0 +1,335 @@
+html {
+  
+    background: #1A434E;
+}
+
+@font-face {
+      font-family: 'Comfortaa';
+      src: url('fonts/Comfortaa-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    
+  }
+  body {
+    margin: 0;
+    font: 'Comfortaa';
+    background: #1A434E;
+    text-align: center;
+    color: white;
+  }
+
+  .container {
+    width: 300px;
+    font: 'Comfortaa'; 
+    background: #1A434E;
+    margin: 0 auto; 
+    padding: 10px; 
+    border: #1A434E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    height: 600px;
+    overflow: auto;
+}
+
+  p{
+    color: white;
+    width: 100%; 
+    font: 'Comfortaa';
+    margin: 0 auto; 
+    padding: 10px;
+  }
+
+ h2{
+  color: #61D384;
+ }
+
+  h1 {
+      font-family: 'Comfortaa';
+      letter-spacing: 2px;
+      font-size: 3em;
+    margin: 0 auto; 
+    padding: 10px;
+  }
+
+  
+  #startScreen {
+    font-family: 'Comfortaa';
+    margin: auto;
+    width: 100%;
+    height: 852px;
+  padding: 10px
+}
+
+.label-input-container {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+#startScreen label {
+  width: 120px; 
+  text-align: left; 
+}
+
+#startScreen input {
+  width: 200px;
+  padding: 5px;
+}
+
+  #quiz {
+    font-family: 'Comfortaa';
+      margin: auto;
+      width: 100%;
+    padding: 10px;
+    height: 852px;
+
+}
+
+  #questions {
+      font-size: 1em;
+      font-family: 'Comfortaa';
+      
+  }
+
+  #answers {
+      list-style-type: none;
+      font-family: 'Comfortaa';
+      font-size: .8em;
+      margin: 25px 0 0 0;
+      padding: 10px;
+      letter-spacing: 2px;
+      text-align: center;
+      display: block;
+    color: #61D384;
+  }
+
+  
+  #answers li {
+      margin: 10px 0;
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  #answers label,    #answers input  {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #61D384;
+    cursor: pointer;
+    z-index: 90;
+    opacity: 0.5;
+    transition: opacity 0.2s linear;
+    white-space: normal; 
+    display: block; 
+    text-align: center; 
+    word-wrap: break-word; 
+}
+
+#answers input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+  a{
+    border: 4px solid #D2C2F8;
+    background-color: #D2C2F8;
+    border-radius: 10px;
+    color: #1A434E;
+    padding: 3px;
+    font-size: .8em;
+  }
+
+  #answers input[type="radio"]:checked + label {
+      color: #D2C2F8;
+      opacity: 1;
+    border: 3px solid #D2C2F8;
+  }
+
+  #answers label:hover {
+      opacity: 1;
+    border: 3px solid #D2C2F8;
+  }
+#firstName{
+  border: 4px solid #D2C2F8;
+  border-radius: 10px;
+  font-family: 'Comfortaa';
+  margin: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+#surName{
+  border: 4px solid #D2C2F8;
+  border-radius: 10px;
+  font-family: 'Comfortaa';
+  margin: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+#email{
+  border: 4px solid #D2C2F8;
+  border-radius: 10px;
+  font-family: 'Comfortaa';
+  margin: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+#enterButton{
+  border: 2px solid white;
+      font-family: 'Comfortaa';
+      border-radius: 10px;
+      margin: 0.5em;
+      padding: 0.5em;
+      display: inline-block;
+      background-color: transparent;
+      padding: 10px;
+      color: white;
+}
+
+#enterButton:hover {
+  border: 2px solid #61D384;
+  color:#61D384;
+}
+
+  .button {
+      border: 2px solid white;
+      border-radius: 10px;
+      font-family: 'Comfortaa';
+      margin: 0.5em;
+      padding: 0.5em;
+      display: inline-block;
+      background-color: transparent;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+  }
+  .button:hover {
+      cursor: pointer;
+        border: 2px solid #D2C2F8;
+        color:#D2C2F8;
+      }
+  
+
+
+  #results video {
+    width: 100%;          
+    height: 100%;      
+    object-fit: contain; 
+    background: #1A434E;  
+    max-width: 100%;      
+    max-height: 100%;    
+  }
+  
+  #results {
+    display: none;
+    background: #1A434E;
+    color: white;
+    font-family: 'Comfortaa';
+    width: 100%;          
+    height: 300px;        
+    position: relative;  
+  }
+
+  #touristImage {
+    width: 60px;
+    height: 60px; 
+    margin-right: 10px; 
+    object-fit: cover;
+}
+
+  #culturalDiv {
+    background: #1A434E;
+  }
+
+  #adventureDiv {
+    background: #1A434E;
+  }
+
+  #entertainmentDiv {
+    background: #1A434E;
+  }
+
+  #leisureDiv {
+    background: #1A434E;
+  }
+
+  .cultural-image-button {
+    background-image: url('CulturalButton.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 200px;  
+    height: 120px;  
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.cultural-image-button:hover {
+  border: 4px solid #D2C2F8;
+  cursor: pointer;
+}
+
+.leisure-image-button {
+  background-image: url('LeisureButton.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 200px;  
+  height: 120px;   
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.leisure-image-button:hover {
+  border: 4px solid #D2C2F8;
+  cursor: pointer;
+}
+
+.entertainment-image-button {
+  background-image: url('EntertainmentButton.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 200px;  
+  height: 120px;  
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.entertainment-image-button:hover {
+  border: 4px solid #D2C2F8;
+  cursor: pointer;
+}
+
+.adventure-image-button {
+  background-image: url('AdventureButton.png');
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  width: 200px;  
+  height: 120px;  
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.adventure-image-button:hover {
+  border: 4px solid #D2C2F8;
+  cursor: pointer;
+}
+
+  #error {
+      display: none;	
+      background: #1A434E;
+      }
+
